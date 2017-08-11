@@ -1,18 +1,29 @@
 {
-  "name": "friend-finder",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "body-parser": "^1.17.2",
-    "colors": "^1.1.2",
-    "express": "^4.15.4",
-    "mysql": "^2.14.1",
-    "path": "^0.12.7"
-  }
+    "name": "friend-finder",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node server.js"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "body-parser": "^1.17.2",
+        "colors": "^1.1.2",
+        "express": "^4.15.4",
+        "materialize-css": "^0.100.1",
+        "mysql": "^2.14.1",
+        "path": "^0.12.7"
+    },
+    "devDependencies": {},
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/jjconoscenti/friend-finder.git"
+    },
+    "bugs": {
+        "url": "https://github.com/jjconoscenti/friend-finder/issues"
+    },
+    "homepage": "https://github.com/jjconoscenti/friend-finder#readme"
 }
