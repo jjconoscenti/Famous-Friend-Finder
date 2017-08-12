@@ -15,10 +15,14 @@
     <!--Nav bar-->
     <nav>
         <div class="nav-wrapper teal lighten-2 white-text center-align ">
-            <h3>Survey Questions</h3>
+            <a>Survey Questions</a>
+            <ul id="nav-mobile" class="left hide-on-med-and-down">
+                <li><a href="home.html">Home</a></li>
+            </ul>
             <hr>
         </div>
     </nav>
+
     <br>
     <br>
 
@@ -31,6 +35,18 @@
                 <div class="input-field col s10">
                     <input placeholder="Enter your name" id="first_name" type="text" class="validate">
                     <label for="first_name">Name (required)</label>
+                </div>
+
+                <!--Twitter Handle-->
+                <div class="input-field col s10">
+                    <input placeholder="Enter your Twitter handle" id="twitter_handle" type="text" class="validate">
+                    <label for="twitter_handle">Twitter (required)</label>
+                </div>
+
+                <!--Instagram Handle-->
+                <div class="input-field col s10">
+                    <input placeholder="Enter your Instagram handle" id="instagram_handle" type="text" class="validate">
+                    <label for="instagram_handle">Instagram(required)</label>
                 </div>
 
                 <!--File input-->
@@ -187,15 +203,17 @@
         <div class="container ">
             <div class="row ">
                 <div class="col 16 s12 ">
-                    <a href="# ">
-                        <p class="white-text center-align">API Friends List</a> | <a href="# ">GitHub Repo</p>
+                    <ul>
+                        <a href="# ">
+                            <li class="white-text center-align">API Friends List</a> | <a href="# ">GitHub Repo</li>
                     </a>
-                    <a href="https://github.com/jjconoscenti">
-                        <p class="white-text center-align">JJ Conoscenti's Github</p>
-                    </a>
-                    <a href="https://www.linkedin.com/in/jjconoscenti/">
-                        <p class="white-text center-align">JJ Conoscenti's LinkedIn</p>
-                    </a>
+                        <a href="https://github.com/jjconoscenti">
+                            <li class="white-text center-align">JJ Conoscenti's Github</li>
+                        </a>
+                        <a href="https://www.linkedin.com/in/jjconoscenti/">
+                            <li class="white-text center-align">JJ Conoscenti's LinkedIn</li>
+                        </a>
+                    </ul>
                 </div>
             </div class="row ">
             <div class="col 16 s12 ">
