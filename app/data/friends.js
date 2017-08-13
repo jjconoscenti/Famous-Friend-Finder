@@ -1,6 +1,6 @@
-var newBooList = [{
-        name: "Jessica Alba",
-        photo: 'jessicaalba.jpg',
+var friendsList = [{
+        name: "Matt Damon",
+        photo: 'mattdamon.jpg',
         scores: [
             '2',
             '4',
@@ -29,21 +29,7 @@ var newBooList = [{
             '2',
             '5'
         ]
-    },
-    {
-        name: "Jessica Chastain",
-        photo: 'jessicachastain.jpg',
-        scores: [
-            '2',
-            '4',
-            '5',
-            '1',
-            '2',
-            '3',
-            '4',
-            '4',
-            '5',
-            '1'
-        ]
     }
 ];
+
+module.exports = friendsList;
