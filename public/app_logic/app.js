@@ -3,12 +3,17 @@ $(document).ready(function() {
     $('.carousel.carousel-slider').carousel({ fullWidth: true });
 });
 
+// Require color NPM package to read console more easily
+var colors = require('colors');
+
 // Array to store user results
 var userEntry = [];
 
+// Array for best matching friend
+var bestMatch = [];
+
 // Array to store API results
 var apiResults = [];
-
 
 $('#submit-btn').on('click', function(e) {
     e.preventDefault();
@@ -23,5 +28,16 @@ $('#submit-btn').on('click', function(e) {
     newUserEntry.answers.forEach(function(result) {
         var entry = parseInt(result);
         userEntry.push(entry);
+        console.log(colors.green(newUserEntry));
     })
 });
+
+$.ajax({
+    url: '/api/friends',
+    method: 'GET'
+}).done(function(data) {
+    data.forEach(function(result) {
+        apiResults.push(result);
+    });
+
+})
