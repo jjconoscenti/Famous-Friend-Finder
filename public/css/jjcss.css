@@ -10,3 +10,8 @@
 .row .col .s12 {
     float: none;
 }
+
+#friendpic {
+    width: 450px;
+    height: 300px;
+}

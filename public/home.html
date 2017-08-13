@@ -6,37 +6,85 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection" />
-
-    <!--Let bdiv class="row"ser know website is optimized for mobile-->
-    <div class="col 16 s12">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Friend Finder</title>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Friend Finder</title>
 </head>
 
 <body>
 
-    <!--jumbotron-->
+    <!--Nav bar-->
+    <nav>
+        <div class="nav-wrapper teal lighten-2 white-text center-align">
+            <a href="home.html">Welcome to Friend Finder!</a>
+            <ul id="nav-mobile" class="left hide-on-med-and-down">
+                <li>
+                    <a href="home.html"></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
-    <!--<img FACEBOOK LOGO>
-    <h1>Friend Finder</h1>
-    <hr>
-    <h3>Answer a few basic questions</h3>
-    <h3>Then find the friend with the greatest compatibility</h3>
-    <button><span "list icon">GO TO SURVEY</span></button>-->
+    <!--Carousel of cards-->
+    <div class="carousel carousel-slider center" data-indicators="true">
+        <div class="carousel-fixed-item center">
+            <a class="btn waves-effect white grey-text darken-text-2" href="survey.html">Find a new friend!</a>
+        </div>
+        <div class="carousel-item red lighten-2 white-text" href="#one!">
+            <h2>First Panel</h2>
+            <p class="white-text">This is your first panel</p>
+        </div>
+        <div class="carousel-item blue lighten-2 white-text" href="#two!">
+            <h2>Second Panel</h2>
+            <p class="white-text">This is your second panel</p>
+        </div>
+        <div class="carousel-item green lighten-2 white-text" href="#three!">
+            <h2>Third Panel</h2>
+            <p class="white-text">This is your third panel</p>
+        </div>
+        <div class="carousel-item orange lighten-2 white-text" href="#four!">
+            <h2>Fourth Panel</h2>
+            <p class="white-text">This is your fourth panel</p>
+        </div>
+    </div>
 
 
-    <footer class="page-footer">
-        <div class="container">
-            <div class="row">
-                <div class="col 16 s12">
-                    <a href="#">
-                        <p class="white-text">API Friends List</a> |
-                    <a href="#">
-                        GitHub Repo</p>
-                    </a>
+    <!--Big box of content
+    <div class="row">
+        <div class="col s12 l7">
+            <div class="card">
+                <div class="card-image">
+                    <img id="friendpic" src="http://az616578.vo.msecnd.net/files/2016/08/15/6360682710224914221617167464_bigstock-Group-Of-Friends-Having-Fun-To-58863776.jpg">
+                    <span class="card-title">Friendship Goals</span>
                 </div>
-            </div class="row">
-            <div class="col 16 s12">
+                <div class="card-content">
+                    <p>Take our survey to find your new best friend</p>
+                </div>
+                <div class="card-action">
+                    <a href="survey.html">Take the survey</a>
+                </div>
+            </div>
+        </div>
+    </div>-->
+
+
+    <!--footer-->
+    <footer class="page-footer teal lighten-2">
+        <div class="container ">
+            <div class="row">
+                <div class="col 16 s12 ">
+                    <ul>
+                        <a href="# ">
+                            <li class="white-text center-align">API Friends List</a> | <a href="# ">GitHub Repo</li>
+                    </a>
+
+                        <li class="white-text center-align">&copy; 2017 JJ Conoscenti | <a href="https://github.com/jjconoscenti">GitHub</a> |
+                            <a href="https://www.linkedin.com/in/jjconoscenti/"> LinkedIn</a>
+                        </li>
+                    </ul>
+                </div>
+            </div class="row ">
+            <div class="col 16 s12 ">
             </div>
     </footer>
 
