@@ -1,0 +1,12 @@
+.wrapper {
+    float: none;
+    width: 1440px;
+}
+
+.row .col {
+    float: none;
+}
+
+.row .col .s12 {
+    float: none;
+}
