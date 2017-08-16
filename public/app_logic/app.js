@@ -39,5 +39,4 @@ $.ajax({
     data.forEach(function(result) {
         apiResults.push(result);
     });
-
-})
+});
