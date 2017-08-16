@@ -17,7 +17,7 @@
     <!--Nav bar-->
     <nav>
         <div class="nav-wrapper teal lighten-2 white-text center-align ">
-            <a>Survey Questions</a>
+            <a id="surveyTitle">Survey Questions</a>
             <ul id="nav-mobile" class="left hide-on-med-and-down">
                 <li><a href="home.html">Home</a></li>
             </ul>
@@ -199,33 +199,37 @@
                 <i class="material-icons right"></i>
             </button>
 
-            <!--Modal-->
+            <!--Match Modal-->
             <div id="modal1" class="modal bottom-sheet">
                 <div class="modal-content">
-                    <h4>Meet your boo</h4>
-                    <p>text text text!</p>
+                    <h4>Meet your new friend!</h4>
+                    <p>Get to know your new friend, <span class="green-text" id="first_name"></span></p>
+                    <!--Twitter info-->
+                    <p>Connect on Twitter:
+                        <span class="green-text" id="twitter_handle"></span></p>
+                    <!--Instagram Info-->
+                    <p>Connect on instagram: <span class="green-text" id="instagram_handle"></span></p>
                 </div>
-                <div class="modal-footer">
-                    <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Something here</a>
+                <div class=" modal-footer ">
+                    <a href="#! " class="modal-action modal-close waves-effect waves-green btn-flat ">Done</a>
                 </div>
             </div>
-
         </div>
     </div>
     </div>
 
     <!--footer-->
-    <footer class="page-footer teal lighten-2">
+    <footer class="page-footer teal lighten-2 ">
         <div class="container ">
-            <div class="row">
+            <div class="row ">
                 <div class="col 16 s12 ">
                     <ul>
-                        <a href="# ">
-                            <li class="white-text center-align">API Friends List</a> | <a href="# ">GitHub Repo</li>
+                        <a href="/api/friends ">
+                            <li class="white-text center-align ">API Friends List</a> | <a href="https://github.com/jjconoscenti/friend-finder ">GitHub Repo</li>
                     </a>
 
-                        <li class="white-text center-align">&copy; 2017 JJ Conoscenti | <a href="https://github.com/jjconoscenti">GitHub</a> |
-                            <a href="https://www.linkedin.com/in/jjconoscenti/"> LinkedIn</a>
+                        <li class="white-text center-align ">&copy; 2017 JJ Conoscenti | <a href="https://github.com/jjconoscenti ">GitHub</a> |
+                            <a href="https://www.linkedin.com/in/jjconoscenti/ "> LinkedIn</a>
                         </li>
                     </ul>
                 </div>
@@ -236,7 +240,7 @@
 
     <script type="text/javascript " src="https://code.jquery.com/jquery-3.2.1.min.js "></script>
     <script type="text/javascript " src="js/materialize.js "></script>
-    <script type="text/javascript" src="app_logic/app.js"></script>
+    <script type="text/javascript " src="app_logic/app.js "></script>
     <!--<script type="text/javascript " src="server.js ">-->
 </body>
 
