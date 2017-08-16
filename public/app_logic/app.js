@@ -39,4 +39,48 @@ $.ajax({
     data.forEach(function(result) {
         apiResults.push(result);
     });
+    var allUserDifferences;
+    var allFriendsDifferences = [];
+    apiResults.forEach(function(friend) {
+        var friendScores = friend.scores;
+        allUserDifferences = [];
+        allFriendsDifferences.push(allUserDifferences);
+        for (var i = 0; i < 10; i++) {
+            allUserDifferences = Math.abs(friendScores[i] - userEntry[i]);
+        }
+    });
+    var totalFriendDif = [];
+    allFriendsDifferences.forEach(function(difference) {
+        var totalDifference = 0;
+        for (var i = 0; i < 10; i++) {
+            totalDifference += difference[i];
+        }
+        totalFriendDif.push(totalDifference);
+    });
+    console.log(colors.yellow(allFriendsDifferences));
+    console.log(colors.yellow(totalFriendDif));
+    var minDif = Array.min(totalFriendDif);
+    for (var i = 0; i < totalFriendDif.length; i++) {
+        if (minDif === totalFriendDif[i]) {
+            $(`#match`).html(apiResults[i].name);
+        }
+    }
+    if ($('#first_name').val() !== '' && $('#twitter_handle').val() !== '' && $('#instagram_handle').val() !== '' && $('#photo').val() !== '' && $('#q1').val() !== '' && $('#q2').val() !== '' && !$('#q3').val() !== '' && $('#q4').val() !== '' && $('#q5').val() !== '' && $('#q6').val() !== '' && $('#q7').val() !== '' && $('#q8').val() !== '' && $('#q9').val() !== '' && $('#q10').val() !== '') {
+        $.post("/api/friends", newUserEntry,
+            function(data) {
+                if (data) {
+                    $('#modal1').modal('open');
+                }
+                resetSurvey();
+            });
+    } else {
+        console.log(colors.red('Error occurred!'));
+    }
 });
+
+function resetSurvey() {
+    $('#friendFinderForm')[0].reset();
+}
+Array.min = function(array) {
+    return Math.min.apply(Math, array);
+};
