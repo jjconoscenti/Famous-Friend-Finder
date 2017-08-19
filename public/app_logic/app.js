@@ -1,6 +1,7 @@
 $(document).ready(function() {
     $('select').material_select();
     $('.carousel.carousel-slider').carousel({ fullWidth: true });
+    $('.modal').modal();
 });
 
 // Require color NPM package to read console more easily
