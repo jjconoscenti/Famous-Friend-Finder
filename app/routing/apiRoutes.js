@@ -37,6 +37,13 @@ module.exports = function(app) {
         var result = friendListData[matchedFriend.index];
         console.log(result);
         console.log(matchedFriend);
+
+
+
+
+
+
+
         res.json(result);
     });
 };

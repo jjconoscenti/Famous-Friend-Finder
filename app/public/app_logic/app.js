@@ -35,6 +35,13 @@ $(document).ready(function() {
                 function(data) {
                     if (data) {
                         $('#modal1').modal('open');
+                        // append data attributes to modal elements
+                        $('#modal1 #first_name').html(data.name);
+                        $('#modal1 #twitter_handle').html(data.twitter);
+                        $('#modal1 #instagram_handle').html(data.instagram);
+
+                    } else {
+                        console.log('An error occured!')
                     }
                     resetSurvey();
                 });
@@ -42,15 +49,20 @@ $(document).ready(function() {
             console.log('Error occurred!');
         }
     });
+    // .done(function(data) {})
 
-    $.ajax({
-        url: '/api/friends',
-        method: 'GET'
-    }).done(function(data) {
-        data.forEach(function(result) {
-            apiResults.push(result);
-        });
-    });
+    // $.ajax({
+    //     url: '/api/friends',
+    //     method: 'GET'
+    // }).done(function(data) {
+    // data.forEach(function(result) {
+    // apiResults.push(result);
+
+
+
+
+    // });
+    // });
 });
 
 function resetSurvey() {
